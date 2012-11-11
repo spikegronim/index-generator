@@ -60,7 +60,15 @@ jQuery(document).ready(function($) {
             if (last_item === null || last_item !== item) {
                 if (group.length > 0) {
                     group = $.map(group, function(str) { return Number(str) });
-                    group.sort();
+                    group.sort(function (a, b) {
+                        if (a < b) {
+                            return -1;
+                        } else if (a == b) {
+                            return 0;
+                        } else {
+                            return 1;
+                        }
+                    });
                     output.push([last_item, group]);
                 }
                 group = [];
@@ -94,7 +102,7 @@ jQuery(document).ready(function($) {
             table_html += '</tr>';
         }
         table_html += '</table>';
-        table_output_elem.append(table_html);
+        table_output_elem.html(table_html);
 
         output_elem.show();
     }
