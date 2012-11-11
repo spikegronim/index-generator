@@ -2,6 +2,15 @@ doctype html
 html
   head
     title Index Generator
+    link[rel='stylesheet' type='text/css' href='index.css']
   body
-    form[id="index-generator-form"]
-        input[type=textarea name=]
+    h1 Index Generator
+    form[id='index-generator-form']
+      p
+        |Paste two columns of tab separated values containing page numbers in the first column and item names in the second column.
+      label[for='input_spreadsheet'] Paste input here:
+      input[id='input_spreadsheet' type='textarea' name='input_spreadsheet' autofocus="autofocus"]
+      br
+      input[id='submit' type='submit' name='submit' value='Generate index']
+
+    div[id='output']
