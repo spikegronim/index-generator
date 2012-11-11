@@ -1,8 +1,15 @@
-#input_spreadsheet {
-    width: 100px;
-    height: 20px;
+label {
+    margin-right: 40px;
 }
 
-label {
-    padding-right: 40px;
+input {
+    margin-top: 8px;
+}
+
+#output {
+    display: none;
+}
+
+#bad_browser {
+    display: none;
 }
