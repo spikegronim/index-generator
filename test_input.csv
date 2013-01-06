@@ -1,17 +1,50 @@
-page,item
-40,Jacobs Chuck
-136,Jacobs Chuck
-350,Jameson
-386,"Jaw, Crimping"
-615,Wire Rope Clip
-442,Wire Rope Cutter
-447,Rope Cutter
-582,Wire Rope String
-397,Wire Sorter
-416,Wire Stripper
-422,Wire Stripper
-424,Wire Stripper
-425,Wire Stripper
-426,Wire Stripper
-397,Wire Tester
-405,Wire Tester
+Part No,No,des1,des2,des3,des4,des5,des6,des7,des8,des9,des10,des11,des12
+3M1100,548,"Protector, Hearing",Hearing Protector,"Plug, Ear",Ear Plug,,,,,,,,
+3M1425,547,"Protector, Hearing",Hearing Protector,,,,,,,,,,
+3M1427,547,"Protector, Hearing",Hearing Protector,,,,,,,,,,
+3M1721,550,"Glasses, Safety",,,,,,,,,,,
+3M1722,550,"Glasses, Safety",Safety Glasses,,,,,,,,,,
+3M1723,550,"Glasses, Safety",Safety Glasses,,,,,,,,,,
+3M2071,545,"Filter, Sanding/Grinding",,,,,,,,,,,
+3M20901,623,"Tape, Masking, Safe Release",Masking Tape,,,,,,,,,,
+3M20901-1/2,623,"Tape, Masking, Safe Release",Masking Tape,,,,,,,,,,
+3M20902,623,"Tape, Masking, Safe Release",Masking Tape,,,,,,,,,,
+3M20907-180,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+3M20908-150,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+3M20908-80,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+3M20909-60,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+3M2091,545,"Filter, Asbestos Abatement",,,,,,,,,,,
+3M20916-180,106,"Pad, Sanding",Sanding Pad,"Pad, Sanding",,,,,,,,,
+3M20917-150,106,"Pad, Sanding",Sanding Pad,"Pad, Sanding",,,,,,,,,
+3M20917-80,106,"Pad, Sanding",Sanding Pad,"Pad, Sanding",,,,,,,,,
+3M20918-60,106,"Pad, Sanding",Sanding Pad,"Pad, Sanding",,,,,,,,,
+3M2097,3M NP03,,,,,,,,,,,,
+3M33,623,"Tape, Electrical",Electrical Tape,,,,,,,,,,
+3M35BLUE,623,"Tape, Electrical",Electrical Tape,,,,,,,,,,
+3M35GREEN,623,"Tape, Electrical",Electrical Tape,,,,,,,,,,
+3M35RED,623,"Tape, Electrical",Electrical Tape,,,,,,,,,,
+3M35WHITE,623,"Tape, Electrical",Electrical Tape,,,,,,,,,,
+3M501,3M NP04,,,,,,,,,,,,
+3M502,3M NP04,,,,,,,,,,,,
+3M5101,3M NP02,,,,,,,,,,,,
+3M5201,3M NP02,,,,,,,,,,,,
+3M5301,3M NP02,,,,,,,,,,,,
+3M5P71,3M NP03,,,,,,,,,,,,
+3M6001,3M NP04,,,,,,,,,,,,
+3M6001K,3M NP03,,,,,,,,,,,,
+3M6003,3M NP04,,,,,,,,,,,,
+3M6004,3M NP04,,,,,,,,,,,,
+3M6006,3M NP04,,,,,,,,,,,,
+3M6006K,3M NP03,,,,,,,,,,,,
+3M6022,3M NP04,,,,,,,,,,,,
+3M60921,3M NP04,,,,,,,,,,,,
+3M60926,3M NP04,,,,,,,,,,,,
+3M6100,545,Respirator,Dust Mask,,,,,,,,,,
+3M6100DD,3M NP02,,,,,,,,,,,,
+3M6200,545,Respirator,Dust Mask,,,,,,,,,,
+3M6200DD,3M NP02,,,,,,,,,,,,
+3M6291,3M NP02,,,,,,,,,,,,
+3M6300,545,Respirator,Dust Mask,,,,,,,,,,
+3M6300DD,3M NP02,,,,,,,,,,,,
+3M6391,3M NP02,,,,,,,,,,,,
+3M68P71,3M NP02,,,,,,,,,,,,

@@ -3,29 +3,32 @@ index-generator
 
 Generate indices from spreadsheets.
 Take input like:
-
-    page,item
-    40,Jacobs Chuck
-    136,Jacobs Chuck
-    350,Jameson
-    386,"Jaw, Crimping"
-    615,Wire Rope Clip
-    442,Wire Rope Cutter
-    447,Rope Cutter
-    582,Wire Rope String
-    1234,"Thing,with,commas"
-    397,Wire Sorter
-    416,Wire Stripper
-    422,Wire Stripper
-    424,Wire Stripper
-    425,Wire Stripper
-    426,Wire Stripper
-    397,Wire Tester
-    405,Wire Tester
     
+    Part No,No,des1,des2,des3,des4,des5,des6,des7,des8,des9,des10,des11,des12
+    3M1100,548,"Protector, Hearing",Hearing Protector,"Plug, Ear",Ear Plug,,,,,,,,
+    3M1425,547,"Protector, Hearing",Hearing Protector,,,,,,,,,,
+    3M1427,547,"Protector, Hearing",Hearing Protector,,,,,,,,,,
+    3M1721,550,"Glasses, Safety",,,,,,,,,,,
+    3M1722,550,"Glasses, Safety",Safety Glasses,,,,,,,,,,
+    3M1723,550,"Glasses, Safety",Safety Glasses,,,,,,,,,,
+    3M2071,545,"Filter, Sanding/Grinding",,,,,,,,,,,
+    3M20901,623,"Tape, Masking, Safe Release",Masking Tape,,,,,,,,,,
+    3M20901-1/2,623,"Tape, Masking, Safe Release",Masking Tape,,,,,,,,,,
+    3M20902,623,"Tape, Masking, Safe Release",Masking Tape,,,,,,,,,,
+    3M20907-180,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+    3M20908-150,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+    3M20908-80,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+    3M20909-60,106,"Sponge, Sanding",Sanding Sponge,,,,,,,,,,
+    3M2091,545,"Filter, Asbestos Abatement",,,,,,,,,,,
+
 Produces output like:
 
-    item,pages
-    Wire Stripper,"416,422,424,425,426"
+    description,pages
+    Protector, Hearing,547,548
+    Hearing Protector,547,548
+
+The output is sorted alphabetically and the page numbers are sorted numerically.
 
 Do it in the browser to ease deployment.
+
+
