@@ -24,8 +24,9 @@ Take input like:
 Produces output like:
 
     description,pages
-    Protector, Hearing,547,548
-    Hearing Protector,547,548
+    "Filter, Asbestos Abatement","545"
+    "Hearing Protector","547-548"
+    "Protector, Hearing","547-548"
 
 The output is sorted alphabetically and the page numbers are sorted numerically.
 
