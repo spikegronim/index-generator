@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
     }
 
     // http://dreaminginjavascript.wordpress.com/2008/08/22/eliminating-duplicates/
-    function eliminateDuplicates(arr) {
+    function eliminate_duplicates(arr) {
         var i,
             len=arr.length,
             out=[],
@@ -43,11 +43,48 @@ jQuery(document).ready(function($) {
         }
        
         for (i in obj) {
-            out.push(i);
+            out.push(Number(i));
         }
         return out;
     }
 
+    // 1,2,3,5 -> 1-3,5
+    // arr must be sorted
+    function coalesce_runs(arr) {
+        var result = [];
+        var current = arr[0];
+        var run_start = current;
+        var run_length = 0;
+
+        if (arr.length == 1) {
+            return arr;
+        }
+
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] == current + 1) {
+                run_length += 1;
+                current = arr[i];
+            } else {
+                if (run_length == 0) {
+                    result.push(run_start);
+                } else {
+                    result.push(run_start + "-" + (run_start + run_length));
+                }
+
+                run_start  = arr[i];
+                current    = arr[i];
+                run_length = 0;
+            }
+        }
+
+        if (run_length == 0) {
+            result.push(run_start);
+        } else {
+            result.push(run_start + "-" + (run_start + run_length));
+        }
+
+        return result;
+    }
 
     function transform_input(text) {
         var split_rows = $.csv.toArrays(text);
@@ -81,7 +118,7 @@ jQuery(document).ready(function($) {
         for (var description in output) {
             var page_numbers = output[description];
             page_numbers.sort();
-            formatted.push([description].concat(eliminateDuplicates(page_numbers)));
+            formatted.push([description].concat(coalesce_runs(eliminate_duplicates(page_numbers))));
         }
 
         // sort alphabetically on description
@@ -100,13 +137,12 @@ jQuery(document).ready(function($) {
 
     // output is the result of transformInput
     function format_output(output) {
-        console.log(output);
         var string_output = $.map(output, function (row) {
             var item = '"' + row[0] + '"';
             var pages = row.splice(1, row.length);
 
             var string_pages =  pages.join(',');
-            row_value = [item, string_pages].join(',');
+            row_value = [item, '"' + string_pages + '"'].join(',');
             return row_value;
         }).join('\n');
 
